@@ -1,0 +1,74 @@
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	overflow: hidden;
+}
+
+a:link { 
+	text-decoration:none;
+	color: #fff;
+}
+a:visited {
+	text-decoration:none;
+	color: #fff;
+}
+
+#bg {
+	position: absolute;
+	opacity: 0;
+}
+
+#site_container {
+	width: 100%;
+	height: 100%;
+	color: white;
+	position: absolute;
+}
+
+header {
+	position: absolute;
+	left: 2%;
+	top : 2%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	padding-top: 1em;
+}
+
+footer {
+	font-family: 'Raleway', sans-serif;
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+}
+
+footer a:link, footer a:visited {
+	text-decoration: underline;
+}
+
+/* Super simple responsive junk for a super simple page */
+@media only screen and (max-width: 50em) {
+	body { text-align: center; }
+}
+
+@media only screen and (max-width: 25em) {
+	body { font-size: 0.75em; }
+	body ul { font-size: 2em; }
+	body li { padding-top: 4em; }
+	body li:first-child { padding-top: 0; }
+	body footer { margin: 0 auto;  width: 100%; bottom: 2%; right: 0;}
+}
+
